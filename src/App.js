@@ -1,12 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Posts from "./components/Posts";
+import { Theme } from "@radix-ui/themes";
 
 function App() {
   return (
-    <div className="App">
-      <Posts />
-    </div>
+    <>
+      <Theme>
+        <div className="App">
+          <Posts />
+        </div>
+      </Theme>
+    </>
   );
 }
 

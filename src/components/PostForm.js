@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { createPosts, updatePosts } from "../services/postService";
-
+import { Button } from "@radix-ui/themes";
 export default function PostForm({
   posts,
   setPosts,
@@ -71,7 +71,7 @@ export default function PostForm({
             }}
           ></textarea>
         </div>
-        <button type="submit">{editingPost ? "Edit Post" : "Add Post"}</button>
+        <Button type="submit">{editingPost ? "Edit Post" : "Add Post"}</Button>
       </form>
     </>
   );
